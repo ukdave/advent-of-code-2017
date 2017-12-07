@@ -1,0 +1,48 @@
+---
+require: rubocop-rspec
+AllCops:
+  TargetRubyVersion: 2.4
+  DisplayCopNames: true
+Documentation:
+  Enabled: false
+Layout/MultilineArrayBraceLayout:
+  Enabled: false
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: false
+Layout/SpaceInsideBlockBraces:
+  SpaceBeforeBlockParameters: false
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+Metrics/BlockLength:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - "Gemfile"
+Metrics/MethodLength:
+  Max: 5
+Naming/PredicateName:
+  NamePrefixBlacklist:
+    - is_
+Naming/VariableNumber:
+  Enabled: false
+Rails:
+  Enabled: false
+RSpec/NamedSubject:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
+Style/AndOr:
+  EnforcedStyle: conditionals
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
+Style/NestedParenthesizedCalls:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
