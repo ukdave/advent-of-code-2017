@@ -28,6 +28,8 @@ Naming/VariableNumber:
   Enabled: false
 Rails:
   Enabled: false
+RSpec/ExampleLength:
+  Max: 10
 RSpec/NamedSubject:
   Enabled: false
 RSpec/MultipleExpectations:
