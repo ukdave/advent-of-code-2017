@@ -4,12 +4,13 @@ class Day6
   # rubocop:disable Metrics/MethodLength
   def redistribute banks
     history = [banks]
+    new_banks = nil
     loop do
       new_banks = cycle(history.last)
       break if history.include? new_banks
       history << new_banks
     end
-    history.length
+    [history.length, history.length - history.rindex(new_banks)]
   end
   # rubocop:enable all
 
